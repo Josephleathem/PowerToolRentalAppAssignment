@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Power Tool Rental</string>
+    <string name="tvTitle">Power Tool Rentals</string>
+    <string name="hint">Number of Days</string>
+    <string name="rbWasher">Power Washer</string>
+    <string name="rbTiller">Tiller</string>
+    <string name="btCalculate">CALCULATE TOTAL</string>
 </resources>
