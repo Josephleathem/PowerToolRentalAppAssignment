@@ -24,7 +24,6 @@
     <string name="summary_days_rented">Number of Days: %1$d</string>
     <string name="summary_total_cost">Total Cost: %1$s</string>
     <string name="rent_another_tool">Rent Another Tool</string>
-    <string name="preview_total">Total Cost: %1$s</string>
     <string name="btBack">Back</string>
     <string name="faq_help_title">FAQ &amp; Help</string>
     <string name="faq_pricing">Q: How is pricing calculated?\nA: Power Washer: $55.99/day | Tiller: $68.99/day</string>

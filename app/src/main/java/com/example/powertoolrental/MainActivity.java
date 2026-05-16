@@ -6,13 +6,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
     private static final double WASHER_COST = 55.99;
@@ -38,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         final EditText days = findViewById(R.id.tvDays);
         final RadioButton rbWasher = findViewById(R.id.rbWasher);
         final RadioButton rbTiller = findViewById(R.id.rbTiller);
-        final TextView result = findViewById(R.id.tvResult);
         Button calculate = findViewById(R.id.btCalculate);
         Button help = findViewById(R.id.btHelp);
 
@@ -56,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
                 String daysText = days.getText().toString().trim();
                 if (daysText.isEmpty()) {
                     showValidationPrompt(getString(R.string.error_empty_days));
-                    result.setText("");
                     return;
                 }
 
@@ -65,19 +60,16 @@ public class MainActivity extends AppCompatActivity {
                     daysEntered = Integer.parseInt(daysText);
                 } catch (NumberFormatException exception) {
                     showValidationPrompt(getString(R.string.error_non_numeric_days));
-                    result.setText("");
                     return;
                 }
 
                 if (daysEntered < 1) {
                     showValidationPrompt(getString(R.string.error_invalid_day_count));
-                    result.setText("");
                     return;
                 }
 
                 if (daysEntered > MAX_RENTAL_DAYS) {
                     showValidationPrompt(getString(R.string.error_too_many_days));
-                    result.setText("");
                     return;
                 }
 
@@ -91,13 +83,10 @@ public class MainActivity extends AppCompatActivity {
                     dailyRate = TILLER_COST;
                 } else {
                     showValidationPrompt(getString(R.string.error_choose_tool));
-                    result.setText("");
                     return;
                 }
 
                 double total = dailyRate * daysEntered;
-                DecimalFormat currency = new DecimalFormat("$###,###.00");
-                result.setText(getString(R.string.preview_total, currency.format(total)));
 
                 Intent summaryIntent = new Intent(MainActivity.this, RentalSummaryActivity.class);
                 summaryIntent.putExtra(EXTRA_TOOL_TYPE, toolType);
