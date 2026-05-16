@@ -40,6 +40,15 @@ public class MainActivity extends AppCompatActivity {
         final RadioButton rbTiller = findViewById(R.id.rbTiller);
         final TextView result = findViewById(R.id.tvResult);
         Button calculate = findViewById(R.id.btCalculate);
+        Button help = findViewById(R.id.btHelp);
+
+        help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent helpIntent = new Intent(MainActivity.this, HelpActivity.class);
+                startActivity(helpIntent);
+            }
+        });
 
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override

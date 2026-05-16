@@ -5,6 +5,7 @@
     <string name="rbWasher">Power Washer</string>
     <string name="rbTiller">Tiller</string>
     <string name="btCalculate">CALCULATE TOTAL</string>
+    <string name="btHelp">HELP &amp; FAQ</string>
     <string name="tool_info_title">Tool Information</string>
     <string name="washer_description">Ideal for cleaning decks, siding, and driveways with high-pressure water spray.</string>
     <string name="tiller_description">Great for loosening soil, mixing compost, and preparing garden beds.</string>
@@ -24,4 +25,17 @@
     <string name="summary_total_cost">Total Cost: %1$s</string>
     <string name="rent_another_tool">Rent Another Tool</string>
     <string name="preview_total">Total Cost: %1$s</string>
+    <string name="btBack">Back</string>
+    <string name="faq_help_title">FAQ &amp; Help</string>
+    <string name="faq_pricing">Q: How is pricing calculated?\nA: Power Washer: $55.99/day | Tiller: $68.99/day</string>
+    <string name="faq_limit">Q: What is the rental limit?\nA: Maximum 7 days per rental</string>
+    <string name="faq_policies">Q: Any additional policies?\nA: Tools must be returned clean and in good working condition. Late returns may include additional fees.</string>
+    <string name="faq_q_pricing">How is the pricing calculated?</string>
+    <string name="faq_a_pricing">Power Washer costs $55.99 per day and Tiller costs $68.99 per day. The total is calculated by multiplying the daily rate by the number of rental days.</string>
+    <string name="faq_q_limit">What is the maximum rental period?</string>
+    <string name="faq_a_limit">The maximum rental period is 7 days per rental. This limit helps ensure equipment availability for other customers.</string>
+    <string name="faq_q_policies">What are the rental policies?</string>
+    <string name="faq_a_policies">Tools must be returned in good working condition. A security deposit may be required. Late returns may incur additional fees. Please inspect tools upon pickup and report any damage immediately.</string>
+    <string name="faq_q_tools">Which tool should I choose?</string>
+    <string name="faq_a_tools">Choose a Power Washer for outdoor cleaning tasks like decks and driveways. Choose a Tiller for garden preparation and soil cultivation. Both tools come with basic safety instructions.</string>
 </resources>
