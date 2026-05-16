@@ -5,4 +5,23 @@
     <string name="rbWasher">Power Washer</string>
     <string name="rbTiller">Tiller</string>
     <string name="btCalculate">CALCULATE TOTAL</string>
+    <string name="tool_info_title">Tool Information</string>
+    <string name="washer_description">Ideal for cleaning decks, siding, and driveways with high-pressure water spray.</string>
+    <string name="tiller_description">Great for loosening soil, mixing compost, and preparing garden beds.</string>
+    <string name="washer_image_desc">Power washer image</string>
+    <string name="tiller_image_desc">Tiller image</string>
+    <string name="validation_title">Invalid Input</string>
+    <string name="error_empty_days">Please enter the number of rental days.</string>
+    <string name="error_non_numeric_days">Please enter a valid whole number for rental days.</string>
+    <string name="error_too_many_days">Rental limit is 7 days. Please enter 7 or fewer.</string>
+    <string name="error_choose_tool">Please select either Power Washer or Tiller.</string>
+    <string name="error_invalid_day_count">Please enter at least 1 rental day.</string>
+    <string name="ok">OK</string>
+    <string name="summary_title">Rental Summary</string>
+    <string name="summary_tool_type">Tool Type: %1$s</string>
+    <string name="summary_daily_rate">Daily Rate: %1$s</string>
+    <string name="summary_days_rented">Number of Days: %1$d</string>
+    <string name="summary_total_cost">Total Cost: %1$s</string>
+    <string name="rent_another_tool">Rent Another Tool</string>
+    <string name="preview_total">Total Cost: %1$s</string>
 </resources>
