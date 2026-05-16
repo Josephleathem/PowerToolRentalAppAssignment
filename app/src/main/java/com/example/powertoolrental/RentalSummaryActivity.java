@@ -1,5 +1,6 @@
 package com.example.powertoolrental;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -37,6 +38,11 @@ public class RentalSummaryActivity extends AppCompatActivity {
         daysRentedView.setText(getString(R.string.summary_days_rented, daysRented));
         totalCostView.setText(getString(R.string.summary_total_cost, currency.format(totalCost)));
 
-        rentAnotherButton.setOnClickListener(v -> finish());
+        rentAnotherButton.setOnClickListener(v -> {
+            Intent homeIntent = new Intent(RentalSummaryActivity.this, MainActivity.class);
+            homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(homeIntent);
+            finish();
+        });
     }
 }
